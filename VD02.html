@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карточки пользователей</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+body{background:#6a11cb;background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;}
+.container{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;max-width:1200px;}
+.card{width:320px;background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15);transition:all 0.4s ease;}
+.card:hover{transform:translateY(-15px);box-shadow:0 15px 40px rgba(0,0,0,0.25);background:white;background:linear-gradient(135deg,#ffffff 0%,#f8f9fa 100%);}
+.card:hover .photo{transform:scale(1.1);border:5px solid #6a11cb;}
+.photo-container{width:100%;height:220px;overflow:hidden;background:#2575fc;display:flex;justify-content:center;align-items:center;}
+.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid rgba(255,255,255,0.3);transition:all 0.4s ease;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.info{padding:25px;text-align:center;}
+h2{color:#2c3e50;margin-bottom:15px;font-size:1.6rem;}
+.detail{display:flex;align-items:center;margin:12px 0;color:#34495e;}
+.detail i{width:24px;color:#2575fc;font-size:1.1rem;margin-right:10px;}
+.email{color:#2980b9;word-break:break-all;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="photo-container">
+<img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Фото пользователя" class="photo">
+</div>
+<div class="info">
+<h2>Иванова Мария Петровна</h2>
+<div class="detail">
+<i class="fas fa-envelope"></i>
+<span class="email">ivanova.maria@example.com</span>
+</div>
+<div class="detail">
+<i class="fas fa-birthday-cake"></i>
+<span>15 марта 1992</span>
+</div>
+<div class="detail">
+<i class="fas fa-city"></i>
+<span>Москва</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="photo-container">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Фото пользователя" class="photo">
+</div>
+<div class="info">
+<h2>Смирнов Алексей Владимирович</h2>
+<div class="detail">
+<i class="fas fa-envelope"></i>
+<span class="email">smirnov.alexey@company.ru</span>
+</div>
+<div class="detail">
+<i class="fas fa-birthday-cake"></i>
+<span>28 июля 1988</span>
+</div>
+<div class="detail">
+<i class="fas fa-city"></i>
+<span>Санкт-Петербург</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="photo-container">
+<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Фото пользователя" class="photo">
+</div>
+<div class="info">
+<h2>Козлова Екатерина Сергеевна</h2>
+<div class="detail">
+<i class="fas fa-envelope"></i>
+<span class="email">kate.koz@mail-service.com</span>
+</div>
+<div class="detail">
+<i class="fas fa-birthday-cake"></i>
+<span>3 декабря 1995</span>
+</div>
+<div class="detail">
+<i class="fas fa-city"></i>
+<span>Казань</span>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
